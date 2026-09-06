@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Daisy's Spam Musubi Bizz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1 style="text-align: center;">It's your guide Daisy</h1>
-    <p style="text-align: center;">Taste the Spam-taneous flavor.</p>
+    <h1>It's your guide Daisy</h1>
+    <p>Taste the Spam-taneous flavor.</p>
 
     <nav>
-        <ul style="list-style-type: none; display: flex; justify-content: center; gap: 20px; padding: 0;">
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -26,98 +26,81 @@
 <main>
 
     <section>
-        <h2 style="text-align: center;">Get in Touch</h2>
+        <h2>Get in Touch</h2>
 
-        <p style="text-align: center;">
+        <p>
             Have a suggestion for an authentic Spam musubi? Want to share a location
             with the community? Feel free to reach out.
         </p>
 
-        <p style="text-align: center;">
+        <p>
             📧 Email: daisysspammusubibizz@gmail.com
         </p>
 
-        <p style="text-align: center;">
+        <p>
             📱 Instagram: @deys.thetic
         </p>
 
-        <p style="text-align: center;">
+        <p>
             📍 Location: City of San Jose Del Monte, Bulacan, Philippines
         </p>
     </section>
 
     <section>
-        <h2 style="text-align: center;">Let's Connect</h2>
+        <h2>Let's Connect</h2>
 
-        <p style="text-align: center;">
+        <p>
             Follow the page for new locations, new updates, and more delicious flavor.
         </p>
-        <h2 style="text-align: center;">Send Us a Message</h2>
-    
+        
+        <h2>Send Us a Message</h2>
     </section>
 
-        <form>
+    <form>
+        <fieldset>
+            <legend>Your details</legend>
 
-            <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <legend>Your details</legend>
+            <br><br>
 
-                <label for="name">Name:</label>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <input type="text" id="name" name="name" required>
+            <br><br>
 
-                <br><br>
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Choose a subject</option>
+                <option value="question">Ask a question</option>
+                <option value="feedback">Give feedback</option>
+                <option value="reservation">Ask about reservations</option>
+                <option value="other">Something else</option>
+            </select>
 
-                <label for="email">Email:</label>
+            <br><br>
 
-                <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <br>
 
-                <br><br>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+            ></textarea>
+        </fieldset>
 
-                <label for="subject">Subject:</label>
-
-                <select id="subject" name="subject" required>
-
-                    <option value="">Choose a subject</option>
-
-                    <option value="question">Ask a question</option>
-
-                    <option value="feedback">Give feedback</option>
-
-                    <option value="reservation">Ask about reservations</option>
-
-                    <option value="other">Something else</option>
-
-                </select>
-
-                <br><br>
-
-                <label for="message">Message:</label>
-
-                <br>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    required
-                    style="width: 100%; box-sizing: border-box;"
-                ></textarea>
-
-            </fieldset>
-
-            <div style="text-align: center; margin-top: 15px;">
-
-                <button type="submit">Send message</button>
-
-            </div>
-
-        </form>
+        <div>
+            <button type="submit">Send message</button>
+        </div>
+    </form>
 
 </main>
 
 <footer>
-    <p style="text-align: center;">
+    <p>
         &copy; 2026 Daisy's Spam Musubi Bizz. All rights reserved.
     </p>
 </footer>
